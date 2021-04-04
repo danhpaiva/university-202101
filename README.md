@@ -12,4 +12,4 @@ If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
 If you can't read the language, you may not be able to understand the codes.
 
-:warning: Perhaps I will return here in the future to redo some logic. (;</p>
+:warning: Perhaps I will return here in the future to redo some logic. 😉</p>
