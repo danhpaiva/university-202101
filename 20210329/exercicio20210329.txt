@@ -1,0 +1,193 @@
+
+#########################
+####   Integrantes ######
+#########################
+
+Francisco Fontoura - 319230771
+Daniel Henrique Matos de Paiva - 319226054
+Rafael Ferreira Pedrosa - 319228038
+Douglas Ramos Rodrigues - 319210212
+
+#########################
+#######   ex 1 ##########
+#########################
+
+
+package edyene;
+
+import java.util.Scanner;
+
+public class Exercicio1 {
+
+	public static void main(String[] args) {
+
+		Scanner sc = new Scanner(System.in);
+
+		try {
+			System.out.println("Digite o mês desejado: ");
+			int mes = sc.nextInt();
+			System.out.println(retornaMes(mes));
+		} catch (Exception e) {
+			System.out.println("Favor verificar o número informado.");
+		}
+
+		sc.close();
+	}
+
+	public static String retornaMes(int numMes) {
+		String[] listaMeses = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto",
+				"Setembro", "Outubro", "Novembro", "Dezembro" };
+		return listaMeses[numMes - 1];
+
+	}
+
+}
+
+
+
+
+
+#########################
+#######   ex 2 ##########
+#########################
+
+package aula;
+
+import java.util.*;
+
+public class aula1 {
+	public static void main(String[] args) {
+		try {
+			String nome, sexo;
+			int idade, altura, peso;
+
+			ArrayList<Pessoa> pessoas = new ArrayList<Pessoa>();
+			Scanner s = new Scanner(System.in);
+			
+			System.out.println("Insira os dados dos 10 pacientes");
+			
+			for (int i = 0; i < 1; i++) {
+				System.out.println("Insira nome");
+				nome = s.nextLine();
+				
+				
+				System.out.println("Insira sexo");
+				sexo = s.nextLine();
+				while (!(sexo.equals("m") || sexo.equals("f"))) {
+					System.out.println("Favor inserir corretamente.");
+					sexo = s.nextLine();
+				}
+				
+				
+				System.out.println("Insira idade");
+				idade = s.nextInt();
+				
+				System.out.println("Insira altura");
+				altura = s.nextInt();
+				
+				System.out.println("Insira peso");
+				peso = s.nextInt();
+				
+				s.nextLine();
+				
+				Pessoa a = new Pessoa(nome, idade, sexo, altura, peso);
+				pessoas.add(a);
+			}
+			
+			System.out.println("lista dos dados dos clientes");
+			for (Pessoa a : pessoas) {
+				System.out.println(a);
+			}
+			
+			System.out.println("o cliente menos magro é:");
+			int pesoMaior = 0;
+			String nomeCa = "";
+			for (Pessoa a : pessoas) {
+				if (a.peso > pesoMaior) {
+					pesoMaior = a.peso;
+					nomeCa = a.nome;
+				}
+			}
+			System.out.println(nomeCa);
+			
+			System.out.println("clientes com peso acima do ideal");
+			for (Pessoa a : pessoas) {
+				if (a.peso > a.calculaImc()) {
+					System.out.println("cliente " + a.nome + " de " + a.idade + " anos está acima do peso.");
+				}
+			}
+			
+			
+		} catch (Exception e) {
+			System.out.println(e);
+		}
+	}
+
+}
+
+public class Pessoa {
+	String nome, sexo;
+	int idade, altura, peso;
+
+	public Pessoa(String nome, int idade, String sexo, int altura, int peso) {
+		this.nome = nome;
+		this.idade = idade;
+		this.sexo = sexo;
+		this.altura = altura;
+		this.peso = peso;
+	}
+
+	public String getNome() {
+		return nome;
+	}
+
+	public void setNome(String nome) {
+		this.nome = nome;
+	}
+
+	public String getSexo() {
+		return sexo;
+	}
+
+	public void setSexo(String sexo) {
+		this.sexo = sexo;
+	}
+
+	public int getIdade() {
+		return idade;
+	}
+
+	public void setIdade(int idade) {
+		this.idade = idade;
+	}
+
+	public int getAltura() {
+		return altura;
+	}
+
+	public void setAltura(int altura) {
+		this.altura = altura;
+	}
+
+	public int getPeso() {
+		return peso;
+	}
+
+	public void setPeso(int peso) {
+		this.peso = peso;
+	}
+	
+	public int calculaImc() {
+		if (this.sexo == "m") {
+			return (72 * (this.altura/100) - 58);
+		} else {
+			return (62 * (this.altura/100) - 44);
+		}	
+	}
+	
+	@Override
+	public String toString() {
+		return "Pessoa [nome=" + nome + ", sexo=" + sexo + ", idade=" + idade + ", altura=" + altura + ", peso=" + peso
+				+ "]";
+	}
+}
