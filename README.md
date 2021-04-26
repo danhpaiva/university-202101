@@ -1,4 +1,4 @@
-<h1>:smile: University - Period 2021/01</h1>
+<h1>😀 University - Period 2021/01</h1>
 
 <h2>:scroll: What will you find in this repository?</h2>
 
@@ -12,4 +12,4 @@ If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
 If you can't read the language, you may not be able to understand the codes.
 
-:warning: Perhaps I will return here in the future to redo some logic. 😉</p>
+⚠️ Perhaps I will return here in the future to redo some logic. 😉</p>
