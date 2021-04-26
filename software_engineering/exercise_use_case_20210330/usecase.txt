@@ -1,0 +1,59 @@
+UC001 - Realizar Pedido de Cerveja
+
+PRE-CONDICAO
+O UC003-Definir Localização deverá ser executado.
+
+
+FLUXO PRINCIPAL
+Cliente seleciona a opção cerveja
+
+Sistema deve listar quais são as cervejas disponíveis para a região informada na pré-condição.
+
+Cliente seleciona a cerveja desejada.
+
+Sistema apresenta a interface de usuário para a seleção da quantidade de itens desejados.
+
+Cliente deve informar a quantidade de itens desejados
+
+Cliente deve acionar o botão adicionar.
+
+Sistema deve inserir os itens selecionados pelo cliente no carrinho de compras.
+
+Cliente deve realizar a autenticação.
+
+Sistema autentica o usuario corretamente
+
+Cliente finaliza o pedido e informa a modalidade de pagamento
+
+Se o cliente deseja pagar via cartão de crédito on-line, desvie para o Fluxo Alternativo 001
+
+
+
+
+
+
+FA001 Pagamento com cartão de crédito on-line
+
+Cliente deve informar as seguintes informações:
+Numero de cartão
+data de validade
+codigo de seguranca
+nome impresso do cartão de crédito
+
+Sistema tenta realizar o pagamento com as informações repassadas pelo Cliente
+
+Caso o pagamento não seja bem sucedido. O sistema deve apresentar o motivo pelo qual o pagamento não pode ser realizado, desvie para o FE001
+
+O sistema deve emitir uma mensagem informando o motivo de não pagamento. As mensagens podem ser:
+Saldo insuficiente
+Informações do cartão incorretas
+Transação não autorizada pelo banco
+Cartão bloqueado
+Cartão é de débito ou internacional
+
+Retornar ao fluxo principal.
+
+
+
+POS-CONDICAO
+Sistema armazena as informaçõe no banco de dados da aplicação para ser transmitido aos fornecedores cadastrados.
