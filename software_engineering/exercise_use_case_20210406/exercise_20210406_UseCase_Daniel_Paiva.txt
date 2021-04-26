@@ -1,0 +1,58 @@
+Nome	Daniel Henrique Matos de Paiva
+RA 		319226054
+
+Caso de Uso do Ifood
+Realização de compra de lanche's através do aplicativo mobile
+
+PRE-CONDICAO
+		UC001 - Estar logado no aplicativo
+		UC002 - Endereço de entrega previamente cadastrado
+		UC003 - Cartão de crédito e/ou débito previamente cadastrado
+
+FLUXO PRINCIPAL
+		Cliente seleciona a opção Início no App
+		Cliente clica na opção Buscar no App
+		App mostra a barra de busca
+		Cliente informa o nome do restaurante que deseja solicitar o pedido
+		App lista todos os restaurantes com nome similar digitado pelo cliente
+		Cliente seleciona o restaurante desejado e vai para FA001
+
+		
+FLUXO ALTERNATIVO
+
+		FA001 - Cliente seleciona as opções do cardapio do restaurante desejadas
+		App incrementa no saldo da compra os valores dos itens deste pedido
+		App mostra popup de aparetivos opcionais
+		Cliente seleciona os aparetivos opcionais desejados
+		App incrementa ou não no saldo da compra os valores dos aperitivos adicionados
+		App mostra popup com bebidas opcionais desejadas
+		App incrementa ou não no saldo da compra os valores das bebidas adicionadas
+		App mostra popup de sobremesas opcionais
+		Cliente seleciona sobremesas desejadas
+		App incrementa ou não no saldo da compra os valores das sobremesas adicionadas
+		App mostra o total da compra na sacola e direciona pro FA002
+		
+		FA002 - Cliente confirma a compra
+		App solicita o endereço de entrega
+		Cliente seleciona o endereço de entrega desejado
+		App disponibiliza opção para inserção de cupons promocionais
+		Cliente informa ou não cupom disponível
+		Cliente seleciona forma de pagamento, sendo cartão de crédito ou débito
+		Cliente informa ou não se quer adicionar CPF na nota
+		Cliente finaliza o pedido
+		App mostra um popup com o resumo do pedido
+		App aguarda confirmação do pedido por parte do cliente
+		Cliente confirma o pedido e vai para o fluxo FA003
+		
+		FA003 - App solicita o CVV do cartão do cliente
+		Cliente confirma o CVV do cartão para o app
+		App informa que o cliente pagou o pedido e vai para o FA004
+
+		FA004 - App mostra tela do pedido sendo preparado pelo restaurante
+		Cliente monitora o pedido através da tela do app
+		Restaurante envia mensagem através do chat do app informando que pedido foi entregue ao motoboy
+		App informa na tela do pedido que o pedido foi entregue ao cliente
+		App direciona para o fluxo principal
+
+POS-CONDICAO
+		UC004 - Sistema armazena as informações da compra no banco de dados da aplicação para ser visualizada pelo cliente nos pedidos já realizados
