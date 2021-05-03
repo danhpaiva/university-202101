@@ -8,5 +8,7 @@ I decided to put all these codes here as a backup. <br>
 If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
 <h2>About the language</h2>
+
 <p>All codes were made in the Portuguese language.
+
 ⚠️ Perhaps I will return here in the future to redo some logic. 😉</p>
