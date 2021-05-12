@@ -1,0 +1,25 @@
+Decompondo Estórias
+
+Aluno: Daniel Henrique Matos de Paiva 
+RA: 319226054
+
+História Inicial:
+
+"Como tradutor eu quero fazer traduções utilizando uma ferramenta que permita 
+traduzir para 40 idiomas diferentes para facilitar o meu trabalho."
+
+
+Nova História
+
+A ferramenta de tradução DEVE possuir a opção de traduzir determinado texto para uma linguagem desejada.
+A seleção de idioma DEVE ser por meio de uma lista no padrão: IdiomaDoTexto PARA IdiomaDesejado.
+Essa seleção SERÁ útil PARA QUE os usuários GANHEM agilidade e facilidade no uso da ferramenta.
+
+Princípio INVEST:
+
+Independente
+Negociável
+Valor
+Estimável
+Small - Pequena
+Testável
