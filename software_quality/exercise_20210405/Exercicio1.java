@@ -9,18 +9,18 @@ public class Exercicio1 {
 		Scanner sc = new Scanner(System.in);
 
 		try {
-			System.out.println("Digite o mês desejado: ");
+			System.out.println("Digite o mï¿½s desejado: ");
 			int mes = sc.nextInt();
 			System.out.println(retornaMes(mes));
 		} catch (Exception e) {
-			System.out.println("Favor verificar o número informado.");
+			System.out.println("Favor verificar o nï¿½mero informado.");
 		}
 
 		sc.close();
 	}
 
 	public static String retornaMes(int numMes) {
-		String[] listaMeses = { "Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto",
+		String[] listaMeses = { "Janeiro", "Fevereiro", "Marï¿½o", "Abril", "Maio", "Junho", "Julho", "Agosto",
 				"Setembro", "Outubro", "Novembro", "Dezembro" };
 		return listaMeses[numMes - 1];
 
