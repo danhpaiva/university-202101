@@ -11,4 +11,4 @@ If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
 <p>All codes were made in the Portuguese language.
 
-⚠️ Perhaps I will return here in the future to redo some logic. 😉</p>
+📝 Perhaps I will return here in the future to redo some logic. 😉</p>
