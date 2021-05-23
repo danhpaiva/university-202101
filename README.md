@@ -4,7 +4,7 @@
 
 <p>Here you will find some codes of the discipline: "Software quality and management" and "Software Engineering .<br>
 These are codes in <strong>.java</strong> that I made in the first half of 2021. <br>
-You will also find diagrams.
+You will also find diagrams.<br>
 I decided to put all these codes here as a backup. <br>
 If you encounter a similar problem, maybe I will help you to reason hehehe</p>
 
