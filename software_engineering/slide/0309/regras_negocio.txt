@@ -1,0 +1,19 @@
+RNs
+
+Regras gerais
+RN005 O restaurante poderá cancelar o plano quando quiser.
+
+
+Se Entrega feita pelo restaurante
+
+RN001 O restaurante pagará uma comissão de 12% sobre o valor de todos os pedidos e mais 3,5% em pedidos com pagamento via iFood
+
+RN002 O restaurante pagará a mensalidade de R$ 100, apenas se faturar mais do que R$ 1.800 mensais
+
+
+Se Entrega feita por entregadores parceiros do iFood
+
+
+RN003 Comissão de 23% sobre o valor de todos os pedidos e mais 3,5% nos pedidos com pagamento via iFood.
+
+RN004 Mensalidade de R$ 130, apenas se faturar mais do que R$ 1.800 mensais.

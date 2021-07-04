@@ -1,0 +1,56 @@
+Módulo Usuario (Pessoa que está com fome)
+RF001 Filtrar pela forma de pagamento
+RF002 Visualizar opções de alimentação no app.
+RF003 Visualizar as últimas compras
+RF004 Visualizar os últimos restaurantes
+RF005 Filtrar pelo tempo de entrega
+RF006 Permitir o monitoramento da localização do usuário ou transportador.
+RF007 Encaminhar mensagens promocionais para os usuários perto do horário do almoço.
+RF008 Encaminhar mensagens promocionais para clientes que pedem muita comida durante o período da noite.
+RF009 Indicar para o usuário se existe algum tipo de mensagem de comunicação
+
+
+RNF002 - O aplicativo deve possuir uma navegação intuitiva e direta para o usuário.
+RNF003 - Fornecer dados georeferenciados com precisão de no mínimo 10 metros a cada 10 segundos
+
+Módulo Nuvem
+RNF001 - Permitir que o pagamento do produto seja feito de forma segura.
+
+
+Módulo transportador
+RF001 Calcular o valor do frete que será pago ao transportador.
+O valor da comida + distância + horário .....
+
+
+
+
+
+
+
+Desempenho
+– Há restrições no tempo de execução ou de resposta do sistema?
+Sim.
+<1min Validar com o arquiteto
+
+– Qual o volume de dados que o sistema deve ser capaz de processar?
+Grande volume de dados e solicitações.
+Validar com o arquiteto
+
+
+– Com que frequência os dados serão recebidos ou enviados?
+Frequencia muito alta.
+
+
+
+
+
+
+O acesso ao sistema ou à informação deve ser controlado?
+Sim
+
+Sim
+
+Pensar em algum mecanismo de retaguarda
+
+
+
